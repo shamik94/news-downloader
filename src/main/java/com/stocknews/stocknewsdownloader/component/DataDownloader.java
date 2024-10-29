@@ -45,6 +45,8 @@ public class DataDownloader {
             String fromDate = yesterday.format(DateTimeFormatter.ISO_DATE);
             String toDate = today.format(DateTimeFormatter.ISO_DATE);
 
+            // TODO read from stocks in resources and fetch data for all stocks
+
             // Build the URL with dynamic dates
             String url = String.format("/api/v1/company-news?symbol=MSFT&from=%s&to=%s&token=%s",
                     fromDate, toDate, apiToken);
