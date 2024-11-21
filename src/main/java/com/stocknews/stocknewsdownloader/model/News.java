@@ -26,6 +26,7 @@ public class News {
     String summary;
     String url;
     String category;
+    String datetime;
 
     // TODO Add DateTime
 }
